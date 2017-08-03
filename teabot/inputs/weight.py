@@ -53,5 +53,5 @@ class Weight(BaseSensor):
             data = self.most_common(read_list)
             return data
         except Exception:
-                print "Exception reading value from scales, may be expected"
-                return 0
+            print "Exception reading value from scales, may be expected"
+            raise
